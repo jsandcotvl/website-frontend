@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS &amp; CO — Construction, Engineering &amp; Multi-Services | Tuticorin</title>
+  <meta name="description" content="JS & CO is a multi-service construction and engineering company led by proprietor Mohamed Rafeek. Construction, real estate, consultancy, steel works, interiors, and more — quality-focused, transparent, practical." />
+  <meta name="keywords" content="JS & CO, construction, engineering, Tuticorin, steel structures, interiors, real estate, consultancy" />
+  <meta property="og:title" content="JS & CO — Building Trust. Shaping Spaces. Delivering Excellence." />
+  <meta property="og:description" content="Multi-service construction and engineering company. Quality-focused work, transparency and practical solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f2440'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%23c9a45c' font-family='Georgia'>JS</text></svg>" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-dark fixed-top" id="mainNav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark">JS</span>
+        <span class="brand-text"><span class="amp">&amp;</span> CO</span>
+      </a>
+      <ul class="navbar-nav ms-auto align-items-center d-none d-lg-flex flex-row gap-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-2"><a href="#contact" class="btn btn-gold btn-sm px-3">Get a Quote</a></li>
+      </ul>
+      <button class="nav-toggle d-lg-none" id="navToggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== MOBILE DRAWER ===================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="drawer-head">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark">JS</span>
+        <span class="brand-text"><span class="amp">&amp;</span> CO</span>
+      </a>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile">
+      <a class="drawer-link" href="#home"><i class="bi bi-house"></i> Home</a>
+      <a class="drawer-link" href="#about"><i class="bi bi-flower2"></i> About</a>
+      <a class="drawer-link" href="#services"><i class="bi bi-grid-3x3-gap"></i> Services</a>
+      <a class="drawer-link" href="#reviews"><i class="bi bi-star"></i> Reviews</a>
+      <a class="drawer-link" href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="#contact" class="btn btn-gold w-100 py-2">Get a Free Quote</a>
+      <div class="d-flex gap-2 mt-4 justify-content-center">
+        <a class="social-btn" href="https://wa.me/919442777862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a class="social-btn" href="https://www.facebook.com/share/1bq7Eickyz/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="social-btn" href="https://www.instagram.com/jsandco_tvl/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== HOME (light) ===================== -->
+  <header class="hero section-light" id="home">
+    <div class="hero-bg" role="img" aria-label="Construction site at dusk with cranes and scaffolding"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+          <p class="hero-kicker reveal">Construction &bull; Engineering &bull; Multi-Services</p>
+          <h1 class="hero-title reveal">Building Trust. Shaping Spaces. <span class="gold-text">Delivering Excellence.</span></h1>
+          <p class="hero-sub reveal">JS <span class="amp">&amp;</span> CO is a multi-service construction and engineering company delivering quality-focused work across construction, real estate, steel structures, interiors and more — with transparency and practical solutions at every step.</p>
+          <div class="d-flex flex-wrap gap-3 reveal">
+            <a href="#services" class="btn btn-gold btn-lg px-4">Explore Our Services <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about section"><i class="bi bi-chevron-down"></i></a>
+  </header>
+
+  <section class="intro section-light py-5" aria-label="Company introduction">
+    <div class="container py-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7 reveal">
+          <h2 class="section-title">A Single Partner for Your Entire Project</h2>
+          <p class="lead-text">From the first sketch to the final handover — and everything in between — JS <span class="amp">&amp;</span> CO brings construction, engineering, supply and finishing services under one accountable roof.</p>
+          <p class="body-text">Led by proprietor <strong>Mohamed Rafeek</strong>, our team approaches every job the same way: understand the client's real need, propose a practical solution, quote transparently, and execute with care. No shortcuts, no surprises.</p>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="row g-3 text-center">
+            <div class="col-6"><div class="stat-card"><i class="bi bi-grid-3x3-gap-fill"></i><span class="stat-num">12</span><span class="stat-label">Service Lines</span></div></div>
+            <div class="col-6"><div class="stat-card"><i class="bi bi-shield-check"></i><span class="stat-num">100%</span><span class="stat-label">Transparent Billing</span></div></div>
+            <div class="col-6"><div class="stat-card"><i class="bi bi-people-fill"></i><span class="stat-num">1</span><span class="stat-label">Accountable Partner</span></div></div>
+            <div class="col-6"><div class="stat-card"><i class="bi bi-hand-thumbs-up-fill"></i><span class="stat-num">GST</span><span class="stat-label">Registered <span class="amp">&amp;</span> Compliant</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT (dark) ===================== -->
+  <section class="section-dark about-section" id="about">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="about-img-wrap">
+            <img src="assets/images/about.jpg" alt="JS & CO team reviewing building plans on a construction site" class="img-fluid rounded-4" loading="lazy" />
+            <div class="about-img-badge">JS <span class="amp">&amp;</span> CO</div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <p class="section-kicker">About Us</p>
+          <h2 class="section-title light">Built on Trust. Driven by Quality.</h2>
+          <p>JS <span class="amp">&amp;</span> CO was founded on a simple belief: clients deserve a partner who says what they mean, quotes what they deliver, and delivers what they quote. Under the proprietorship of <strong class="gold-text">Mohamed Rafeek</strong>, we have grown into a multi-service construction and engineering company serving families, businesses and institutions.</p>
+          <p>We don't chase every project — we focus on the ones we can do well. Whether it is a home build, a steel shade structure, an interior fit-out or a full cost consultation, our promise stays the same: honest advice, transparent pricing, practical engineering and workmanship we are happy to put our name on.</p>
+          <p>Customer satisfaction is not a slogan for us. It is the reason most of our work comes through referrals, and it is the standard we hold ourselves to on every single site.</p>
+          <ul class="about-list">
+            <li><i class="bi bi-check2-circle"></i> Quality-focused execution on every project</li>
+            <li><i class="bi bi-check2-circle"></i> Transparent quotations and billing</li>
+            <li><i class="bi bi-check2-circle"></i> Practical, cost-aware engineering solutions</li>
+            <li><i class="bi bi-check2-circle"></i> Direct communication with the proprietor</li>
+          </ul>
+          <div class="about-meta">
+            <div><span>Company</span><strong>JS & CO</strong></div>
+            <div><span>Proprietor</span><strong>Mohamed Rafeek</strong></div>
+            <div><span>GSTIN</span><strong>33FUCPR6011M1ZH</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES (light) ===================== -->
+  <section class="section-light services-section" id="services">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <p class="section-kicker">What We Do</p>
+        <h2 class="section-title">Our Services</h2>
+        <p class="lead-text mx-auto" style="max-width:640px">Twelve specialised service lines, one accountable team. Choose a service to send us a direct enquiry.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4" id="servicesGrid">
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/construction-contracting.jpg" alt="Construction and contracting — building site with structural work" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Construction <span class="amp">&amp;</span> Contracting</h3>
+              <p>Residential and commercial construction executed with disciplined site management, clear milestones and quality checks at every stage.</p>
+              <button class="btn btn-enquire" data-service="Construction &amp; Contracting">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/real-estate-developers.jpg" alt="Real estate and development — modern residential property" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Real Estate <span class="amp">&amp;</span> Developers</h3>
+              <p>Carefully evaluated plots and developed properties with clear titles, honest guidance and end-to-end purchase support.</p>
+              <button class="btn btn-enquire" data-service="Real Estate &amp; Developers">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/consultancy-cost-technical.jpg" alt="Cost and technical consultancy — project documents and plans" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Consultancy — Cost <span class="amp">&amp;</span> Technical</h3>
+              <p>Independent cost estimation, technical reviews and feasibility advice that help you plan budgets with confidence.</p>
+              <button class="btn btn-enquire" data-service="Consultancy – Cost &amp; Technical">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/hardware-supplier.jpg" alt="Hardware supply — tools and building materials" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Hardware Supplier</h3>
+              <p>Reliable supply of quality building materials, tools and hardware — sourced right, priced fairly and delivered on time.</p>
+              <button class="btn btn-enquire" data-service="Hardware Supplier">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/plumbing-electrical.jpg" alt="Plumbing and electrical — piping and wiring installation" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Plumbing and Electrical</h3>
+              <p>Safe, code-compliant plumbing and electrical installations, repairs and upgrades for homes and commercial spaces.</p>
+              <button class="btn btn-enquire" data-service="Plumbing and Electrical">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/architectural-interiors.jpg" alt="Architectural and interiors — finished modern living space" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Architectural and Interiors</h3>
+              <p>Thoughtful architecture and interior design that balance aesthetics, function and budget — from concept to completion.</p>
+              <button class="btn btn-enquire" data-service="Architectural and Interiors">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/structural-steel-shade.jpg" alt="Structural steel buildings and shade structures" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Structural Steel Buildings <span class="amp">&amp;</span> Shade Structures</h3>
+              <p>Durable steel buildings, warehouses, car parking shades and tensile structures engineered for local conditions.</p>
+              <button class="btn btn-enquire" data-service="Structural Steel Building and Shade Structures">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/pavement-roads-pavers.jpg" alt="Pavement roads — concrete and interlocking pavers" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Pavement Roads — Concrete <span class="amp">&amp;</span> Interlocking Pavers</h3>
+              <p>Neat, long-lasting pavements and internal roads laid with concrete or interlocking pavers for homes, campuses and industry.</p>
+              <button class="btn btn-enquire" data-service="Pavement Roads – Concrete and Interlocking Pavers">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/steel-works.jpg" alt="Steel works — mild steel and stainless steel fabrication" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Steel Works — Mild Steel <span class="amp">&amp;</span> Stainless Steel</h3>
+              <p>Precision fabrication in mild and stainless steel: gates, railings, staircases, tanks, kitchen equipment and custom work.</p>
+              <button class="btn btn-enquire" data-service="Steel Works – Mild Steel and Stainless Steel">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/home-appliances.jpg" alt="Home appliances — modern kitchen appliances" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Home Appliances</h3>
+              <p>Supply of dependable home appliances with genuine products, fair pricing and practical guidance on the right choice.</p>
+              <button class="btn btn-enquire" data-service="Home Appliances">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/event-management.jpg" alt="Event management — decorated party and food arrangement" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Event Management — Food <span class="amp">&amp;</span> Party</h3>
+              <p>Well-organised events with quality food arrangements and party setup, handled end-to-end so you can enjoy the occasion.</p>
+              <button class="btn btn-enquire" data-service="Event Management – Food and Party">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col reveal">
+          <article class="service-card h-100">
+            <div class="service-img"><img src="assets/images/estimation-engineering.jpg" alt="Estimation and engineering — calculations and technical drawings" loading="lazy" /></div>
+            <div class="service-body">
+              <h3>Estimation and Engineering</h3>
+              <p>Detailed quantity estimation, BOQ preparation and engineering support that keep projects on budget and on schedule.</p>
+              <button class="btn btn-enquire" data-service="Estimation and Engineering">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS (dark) ===================== -->
+  <section class="section-dark reviews-section" id="reviews">
+    <div class="container py-5">
+      <div class="text-center mb-4 reveal">
+        <p class="section-kicker">Client Voices</p>
+        <h2 class="section-title light">What Our Customers Say</h2>
+        <p class="mx-auto" style="max-width:620px;color:#aeb8c6">Share your experience with JS &amp; CO — reviews are published as soon as they are submitted.</p>
+      </div>
+
+      <!-- Review states -->
+      <div id="reviewsLoading" class="text-center py-4" aria-live="polite">
+        <div class="spinner-border text-gold" role="status"><span class="visually-hidden">Loading reviews…</span></div>
+        <p class="mt-2 mb-0" style="color:#aeb8c6">Loading reviews…</p>
+      </div>
+      <div id="reviewsError" class="alert alert-danger d-none mx-auto" style="max-width:560px" role="alert">
+        <i class="bi bi-exclamation-triangle me-2"></i>Could not load reviews. Please try again later.
+      </div>
+      <div id="reviewsEmpty" class="text-center py-4 d-none" style="color:#aeb8c6">
+        <i class="bi bi-chat-square-heart fs-2 d-block mb-2"></i>No reviews yet — be the first to share your experience.
+      </div>
+
+      <div class="row g-4" id="reviewsList"><!-- public reviews injected here --></div>
+
+      <!-- Write a review -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-7">
+          <div class="review-form-card reveal">
+            <h3 class="h5 mb-1"><i class="bi bi-pencil-square me-2 gold-text"></i>Write a Review</h3>
+            <p class="small mb-3" style="color:#8b96a6">Your review will appear on the website as soon as you submit it.</p>
+            <form id="reviewForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="revName" class="form-label">Your Name <span class="text-gold">*</span></label>
+                  <input type="text" class="form-control" id="revName" name="name" minlength="2" maxlength="80" required placeholder="e.g. Kumar" />
+                </div>
+                <div class="col-md-6">
+                  <label for="revRating" class="form-label">Rating <span class="text-gold">*</span></label>
+                  <select class="form-select" id="revRating" name="rating" required>
+                    <option value="" selected disabled>Select rating</option>
+                    <option value="5">★★★★★ (5)</option>
+                    <option value="4">★★★★☆ (4)</option>
+                    <option value="3">★★★☆☆ (3)</option>
+                    <option value="2">★★☆☆☆ (2)</option>
+                    <option value="1">★☆☆☆☆ (1)</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="revMessage" class="form-label">Your Review <span class="text-gold">*</span></label>
+                  <textarea class="form-control" id="revMessage" name="message" rows="4" minlength="10" maxlength="1000" required placeholder="Tell us about your experience with JS & CO…"></textarea>
+                </div>
+                <div class="col-12">
+                  <div id="reviewFormAlert" class="alert d-none" role="alert"></div>
+                  <button type="submit" class="btn btn-gold w-100" id="reviewSubmitBtn">
+                    <span class="btn-label">Submit Review</span>
+                    <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT (light) ===================== -->
+  <section class="section-light contact-section" id="contact">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <p class="section-kicker">Get In Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="lead-text mx-auto" style="max-width:620px">Tell us about your project and we will respond with practical next steps.</p>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-card h-100">
+            <h3 class="h5 mb-4">JS <span class="amp">&amp;</span> CO — Company Details</h3>
+            <ul class="contact-list">
+              <li><i class="bi bi-person-badge"></i><div><span>Proprietor</span><strong>Mohamed Rafeek</strong></div></li>
+              <li><i class="bi bi-envelope"></i><div><span>Primary Email</span><a href="mailto:jsandco.tvl@gmail.com">jsandco.tvl@gmail.com</a></div></li>
+              <li><i class="bi bi-envelope"></i><div><span>Secondary Email</span><a href="mailto:jsbuildersmr@gmail.com">jsbuildersmr@gmail.com</a></div></li>
+              <li><i class="bi bi-telephone"></i><div><span>Phone</span><a href="tel:+919442777862">+91 94427 77862</a><a href="tel:+918072587048">+91 80725 87048</a></div></li>
+          
+            </ul>
+            <hr class="border-secondary-subtle" />
+            <p class="fw-semibold mb-2">Connect with us</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="social-btn" href="https://wa.me/919442777862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a class="social-btn" href="https://www.facebook.com/share/1bq7Eickyz/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a class="social-btn" href="https://www.instagram.com/jsandco_tvl/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a class="social-btn" href="mailto:jsandco.tvl@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <form id="contactForm" class="contact-form-card" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cName" class="form-label">Name <span class="text-gold">*</span></label>
+                <input type="text" class="form-control" id="cName" name="name" minlength="2" maxlength="80" required placeholder="Your full name" />
+              </div>
+              <div class="col-md-6">
+                <label for="cEmail" class="form-label">Email <span class="text-gold">*</span></label>
+                <input type="email" class="form-control" id="cEmail" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="col-md-6">
+                <label for="cPhone" class="form-label">Phone <span class="text-gold">*</span></label>
+                <input type="tel" class="form-control" id="cPhone" name="phone" pattern="[0-9+\-\s]{8,16}" required placeholder="+91 …" />
+              </div>
+              <div class="col-md-6">
+                <label for="serviceSelect" class="form-label">Service <span class="text-gold">*</span></label>
+                <select class="form-select" id="serviceSelect" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Construction &amp; Contracting</option>
+                  <option>Real Estate &amp; Developers</option>
+                  <option>Consultancy – Cost &amp; Technical</option>
+                  <option>Hardware Supplier</option>
+                  <option>Plumbing and Electrical</option>
+                  <option>Architectural and Interiors</option>
+                  <option>Structural Steel Building and Shade Structures</option>
+                  <option>Pavement Roads – Concrete and Interlocking Pavers</option>
+                  <option>Steel Works – Mild Steel and Stainless Steel</option>
+                  <option>Home Appliances</option>
+                  <option>Event Management – Food and Party</option>
+                  <option>Estimation and Engineering</option>
+                  <option>Other / General Enquiry</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="cSubject" class="form-label">Subject <span class="text-gold">*</span></label>
+                <input type="text" class="form-control" id="cSubject" name="subject" minlength="3" maxlength="150" required placeholder="e.g. Quotation for steel shade structure" />
+              </div>
+              <div class="col-12">
+                <label for="cMessage" class="form-label">Message <span class="text-gold">*</span></label>
+                <textarea class="form-control" id="cMessage" name="message" rows="5" minlength="10" maxlength="2000" required placeholder="Describe your requirement, location and timeline…"></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cConsent" required />
+                  <label class="form-check-label small" for="cConsent">I consent to JS <span class="amp">&amp;</span> CO contacting me about this enquiry via phone, email or WhatsApp. <span class="text-gold">*</span></label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div id="contactFormAlert" class="alert d-none" role="alert"></div>
+                <button type="submit" class="btn btn-navy btn-lg w-100" id="contactSubmitBtn">
+                  <span class="btn-label">Send Enquiry</span>
+                  <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                </button>
+                <p class="small text-secondary mt-2 mb-0">Powered by EmailJS — no data is stored on this website.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER (dark) ===================== -->
+  <footer class="footer section-dark">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-mark">JS</span>
+            <span class="brand-text"><span class="amp">&amp;</span> CO</span>
+          </div>
+          <p class="footer-text">Multi-service construction and engineering company. Quality-focused work, transparent pricing and practical solutions — from foundation to finishing.</p>
+          <p class="footer-text mb-1"><i class="bi bi-person-badge me-2 gold-text"></i>Proprietor: Mohamed Rafeek</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Construction <span class="amp">&amp;</span> Contracting</a></li>
+            <li><a href="#services">Steel <span class="amp">&amp;</span> Shade Structures</a></li>
+            <li><a href="#services">Architectural <span class="amp">&amp;</span> Interiors</a></li>
+            <li><a href="#services">Consultancy <span class="amp">&amp;</span> Estimation</a></li>
+            <li><a href="#services">All 12 Services</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919442777862"><i class="bi bi-telephone me-2"></i>+91 94427 77862</a></li>
+            <li><a href="tel:+918072587048"><i class="bi bi-telephone me-2"></i>+91 80725 87048</a></li>
+            <li><a href="mailto:jsandco.tvl@gmail.com"><i class="bi bi-envelope me-2"></i>jsandco.tvl@gmail.com</a></li>
+          </ul>
+          <div class="d-flex gap-2 mt-3">
+            <a class="social-btn" href="https://wa.me/919442777862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a class="social-btn" href="https://www.facebook.com/share/1bq7Eickyz/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/jsandco_tvl/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-rule" />
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small footer-text">
+        <span>&copy; <span id="year"></span> JS <span class="amp">&amp;</span> CO. All rights reserved.</span>
+        <span>Website Developed by <a href="tel:+919445771721" class="gold-text text-decoration-none fw-semibold">EmeraldZ Tech Solutions</a> &middot; +91 94457 71721</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
